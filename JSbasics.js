@@ -209,7 +209,7 @@ c /= 11;
 25. Escaping Literal Quotes in Strings
 */
 
-const MyStr = "I am a \"double quoted\" string inside \"double quotes\"."; // Change this line
+const MyStr = 'I am a "double quoted" string inside "double quotes".'; // Change this line
 
 /*
 26. Quoting Strings with Single Quotes
@@ -233,7 +233,7 @@ const mySTr = "This is the start. " + "This is the end."; // Change this line
 29. Concatenating Strings with the Plus Equals Operator
 */
 let myStrr = "This is the first sentence. ";
-myStrr += "This is the second sentence."
+myStrr += "This is the second sentence.";
 console.log(myStrr);
 
 /*
@@ -271,12 +271,14 @@ lastNameLength = lastName.length;
 
 // Setup
 let firstLetterOfLastName = "";
-const lastName = "Lovelace";
+const lastNamE = "Lovelace";
 
 // Only change code below this line
 firstLetterOfLastName = lastName[0]; // Change this line
 
+/*
 34. Understand String Immutability
+*/
 
 // Setup
 let myStr = "Jello World";
@@ -285,23 +287,28 @@ let myStr = "Jello World";
 myStr = "Hello World"; // Change this line
 // Only change code above this line
 
+/*
 35. Use Bracket Notation to Find the Nth Character in a String
+*/
 
 // Setup
-const lastName = "Lovelace";
+const lastNAme = "Lovelace";
 
 // Only change code below this line
 const thirdLetterOfLastName = lastName[2]; // Change this line
 
+/*
 36. Use Bracket Notation to Find the Last Character in a String
-
+*/
 // Setup
-const lastName = "Lovelace";
+const lAstName = "Lovelace";
 
 // Only change code below this line
 const lastLetterOfLastName = lastName[lastName.length - 1]; // Change this line
 
+/*
 37.Use Bracket Notation to Find the Nth-to-Last Character in a String
+*/
 
 // Setup
 const lastName = "Lovelace";
@@ -309,7 +316,9 @@ const lastName = "Lovelace";
 // Only change code below this line
 const secondToLastLetterOfLastName = lastName[lastName.length - 2]; // Change this line
 
+/*
 38. Word Blanks
+*/
 
 const myNoun = "dog";
 const myAdjective = "big";
@@ -317,36 +326,58 @@ const myVerb = "ran";
 const myAdverb = "quickly";
 
 // Only change code below this line
-const wordBlanks = "The "+ myAdjective +" " +" "+ myNoun + " " + myVerb +" " + myAdverb + "."; // Change this line
+const wordBlanks =
+  "The " +
+  myAdjective +
+  " " +
+  " " +
+  myNoun +
+  " " +
+  myVerb +
+  " " +
+  myAdverb +
+  "."; // Change this line
 // Only change code above this line
 console.log(wordBlanks);
 
+/*
 39. Store Multiple Values in one Variable using JavaScript Arrays
+*/
 
 // Only change code below this line
 const myArray = ["Twenty", 500];
 console.log(myArray);
 
+/*
 40. Nest one Array within Another Array
+*/
 
 // Only change code below this line
-const myArray = [["Honey", 23], ["Bobby", 16]];
-console.log(myArray);
+const myArRay = [
+  ["Honey", 23],
+  ["Bobby", 16],
+];
+console.log(myArRay);
 
+/*
 41.Access Array Data with Indexes
+*/
+const mYArray = [50, 60, 70];
+var myData = mYArray[0];
 
-const myArray = [50, 60, 70];
-var myData = myArray[0];
-
+/*
 42. Modify Array Data With Indexes
+*/
 
 // Setup
-const myArray = [18, 64, 99];
+const myArraay = [18, 64, 99];
 
 // Only change code below this line
 myArray[0] = 45;
 
+/*
 43. Access Multi-Dimensional Arrays With Indexes
+*/
 
 const myArray = [
   [1, 2, 3],
@@ -357,73 +388,110 @@ const myArray = [
 
 const myData = myArray[2][1];
 
+/*
 44. Manipulate Arrays With push()
+*/
 
 // Setup
-const myArray = [["John", 23], ["cat", 2]];
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
 
 // Only change code below this line
 myArray.push(["dog", 3]);
 
+/*
 45. Manipulate Arrays With pop()
-
+*/
 // Setup
-const myArray = [["John", 23], ["cat", 2]];
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
 
 // Only change code below this line
 var removedFromMyArray = myArray.pop();
 
+/*
 46. Manipulate Arrays With shift()
+*/
 
 // Setup
-const myArray = [["John", 23], ["dog", 3]];
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
 
 // Only change code below this line
 const removedFromMyArray = myArray.shift();
 
+/*
 47. Manipulate Arrays With unshift()
+*/
 
 // Setup
-const myArray = [["John", 23], ["dog", 3]];
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
 myArray.shift();
 
 // Only change code below this line
 myArray.unshift(["Paul", 35]);
 
+/*
 48. Shopping List
+*/
 
-const myList = [["Milk", 2],["Milk", 2],["Milk", 2],["Milk", 2],["Milk", 2]];
+const myList = [
+  ["Milk", 2],
+  ["Milk", 2],
+  ["Milk", 2],
+  ["Milk", 2],
+  ["Milk", 2],
+];
 
+/*
 49. Write Reusable JavaScript with Functions
+*/
 
-function reusableFunction(){
-  console.log("Hi World")
+function reusableFunction() {
+  console.log("Hi World");
 }
-reusableFunction()
+reusableFunction();
 
+/*
 50. Passing Values to Functions with Arguments
+*/
 
-function functionWithArgs(){
-  console.log(50+100)
+function functionWithArgs() {
+  console.log(50 + 100);
 }
 functionWithArgs();
 
+/*
 51. Passing Values to Functions with Arguments
+*/
 
-function functionWithArgs(a,b){
-  console.log(a+b)
+function functionWithArgs(a, b) {
+  console.log(a + b);
 }
-functionWithArgs(2,1);
-functionWithArgs(12,4);
+functionWithArgs(2, 1);
+functionWithArgs(12, 4);
 
+/*
 52. Return a Value from a Function with Return
+*/
 
-function timesFive(num){
-return(num * 5);
+function timesFive(num) {
+  return num * 5;
 }
 console.log(timesFive(5));
 
+/*
 53. Global Scope and Functions
+*/
 
 // Declare the myGlobal variable below this line
 let myGlobal = 10;
@@ -443,35 +511,40 @@ function fun2() {
   }
   console.log(output);
 }
-
+/*
 54. Local Scope and Functions
+*/
 
 function myLocalScope() {
   // Only change code below this line
-var myVar
-  console.log('inside myLocalScope', myVar);
+  var myVar;
+  console.log("inside myLocalScope", myVar);
 }
 myLocalScope();
 
 // Run and check the console
 // myVar is not defined outside of myLocalScope
-console.log('outside myLocalScope', myVar);
+console.log("outside myLocalScope", myVar);
 
+/*
 55. Global vs. Local Scope in Functions
+*/
 
 // Setup
 const outerWear = "T-Shirt";
 
 function myOutfit() {
   // Only change code below this line
-var outerWear = "sweater";
+  var outerWear = "sweater";
   // Only change code above this line
   return outerWear;
 }
 
 myOutfit();
 
+/*
 56. Understanding Undefined Value returned from a Function
+*/
 
 // Setup
 let sum = 0;
@@ -481,7 +554,7 @@ function addThree() {
 }
 
 // Only change code below this line
-function addFive(){
+function addFive() {
   sum = sum + 5;
 }
 
@@ -490,7 +563,9 @@ function addFive(){
 addThree();
 addFive();
 
+/*
 57. Assignment with a Returned Value
+*/
 
 // Setup
 let processed = 0;
@@ -502,12 +577,14 @@ function processArg(num) {
 // Only change code below this line
 processed = processArg(7);
 
+/*
 58.Stand in Line
+*/
 
 function nextInLine(arr, item) {
   // Only change code below this line
-arr.push(item);
-return arr.shift();
+  arr.push(item);
+  return arr.shift();
   // Only change code above this line
 }
 
@@ -519,7 +596,9 @@ console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
 
+/*
 59. Understanding Boolean Values
+*/
 
 function welcomeToBooleans() {
   // Only change code below this line
@@ -529,8 +608,9 @@ function welcomeToBooleans() {
   // Only change code above this line
 }
 
+/*
 60. Use Conditional Logic with If Statements
-
+*/
 function trueOrFalse(wasThatTrue) {
   // Only change code below this line
   if (wasThatTrue) {
@@ -538,16 +618,17 @@ function trueOrFalse(wasThatTrue) {
   }
   return "No, that was false";
 
-
   // Only change code above this line
-
 }
 
+/*
 61. Comparison with the Equality Operator
+*/
 
 // Setup
 function testEqual(val) {
-  if (val == 12) { // Change this line
+  if (val == 12) {
+    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -555,11 +636,14 @@ function testEqual(val) {
 
 testEqual(10);
 
+/*
 62. Comparison with the Strict Equality Operator
+*/
 
 // Setup
 function testStrict(val) {
-  if (val === 7) { // Change this line
+  if (val === 7) {
+    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -567,11 +651,14 @@ function testStrict(val) {
 
 testStrict(10);
 
+/*
 63. Practice comparing different values
+*/
 
 // Setup
 function compareEquality(a, b) {
-  if (a === b) { // Change this line
+  if (a === b) {
+    // Change this line
     return "Equal";
   }
   return "Not Equal";
@@ -579,11 +666,14 @@ function compareEquality(a, b) {
 
 compareEquality(10, "10");
 
+/*
 64.Comparison with the Inequality Operator
+*/
 
 // Setup
 function testNotEqual(val) {
-  if (val != 99) { // Change this line
+  if (val != 99) {
+    // Change this line
     return "Not Equal";
   }
   return "Equal";
@@ -591,11 +681,14 @@ function testNotEqual(val) {
 
 testNotEqual(10);
 
+/*
 65. Comparison with the Strict Inequality Operator
+*/
 
 // Setup
 function testStrictNotEqual(val) {
-  if (val !== 17) { // Change this line
+  if (val !== 17) {
+    // Change this line
     return "Not Equal";
   }
   return "Equal";
@@ -603,14 +696,18 @@ function testStrictNotEqual(val) {
 
 testStrictNotEqual(10);
 
+/*
 66. Comparison with the Greater Than Operator
+*/
 
 function testGreaterThan(val) {
-  if (val > 100) {  // Change this line
+  if (val > 100) {
+    // Change this line
     return "Over 100";
   }
 
-  if (val > 10) {  // Change this line
+  if (val > 10) {
+    // Change this line
     return "Over 10";
   }
 
@@ -619,14 +716,18 @@ function testGreaterThan(val) {
 
 testGreaterThan(10);
 
+/*
 67. Comparison with the Greater Than Or Equal To Operator
+*/
 
 function testGreaterOrEqual(val) {
-  if (val >= 20) {  // Change this line
+  if (val >= 20) {
+    // Change this line
     return "20 or Over";
   }
 
-  if (val >= 10) {  // Change this line
+  if (val >= 10) {
+    // Change this line
     return "10 or Over";
   }
 
@@ -635,14 +736,18 @@ function testGreaterOrEqual(val) {
 
 testGreaterOrEqual(10);
 
+/*
 68. Comparison with the Less Than Operator
+*/
 
 function testLessThan(val) {
-  if (val < 25) {  // Change this line
+  if (val < 25) {
+    // Change this line
     return "Under 25";
   }
 
-  if (val < 55) {  // Change this line
+  if (val < 55) {
+    // Change this line
     return "Under 55";
   }
 
@@ -651,14 +756,18 @@ function testLessThan(val) {
 
 testLessThan(10);
 
+/*
 69. Comparison with the Less Than Or Equal To Operator
+*/
 
 function testLessOrEqual(val) {
-  if (val <= 12) {  // Change this line
+  if (val <= 12) {
+    // Change this line
     return "Smaller Than or Equal to 12";
   }
 
-  if (val <= 24) {  // Change this line
+  if (val <= 24) {
+    // Change this line
     return "Smaller Than or Equal to 24";
   }
 
@@ -667,16 +776,16 @@ function testLessOrEqual(val) {
 
 testLessOrEqual(10);
 
+/*
 70. Comparisons with the Logical And Operator
+*/
 
 function testLogicalAnd(val) {
   // Only change code below this line
 
   if (val <= 50 && val >= 25) {
-    
-      return "Yes";
-    }
-
+    return "Yes";
+  }
 
   // Only change code above this line
   return "No";
@@ -684,7 +793,9 @@ function testLogicalAnd(val) {
 
 testLogicalAnd(10);
 
+/*
 71. Comparisons with the Logical Or Operator
+*/
 
 function testLogicalOr(val) {
   // Only change code below this line
@@ -693,14 +804,15 @@ function testLogicalOr(val) {
     return "Outside";
   }
 
-
   // Only change code above this line
   return "Inside";
 }
 
 testLogicalOr(15);
 
+/*
 73. Introducing Else Statements
+*/
 
 function testElse(val) {
   let result = "";
@@ -718,24 +830,27 @@ function testElse(val) {
 
 testElse(4);
 
+/*
 74. Introducing Else If Statements
+*/
 
 function testElseIf(val) {
   if (val > 10) {
     return "Greater than 10";
-  } else if (val < 5){
-return "Smaller than 5";
+  } else if (val < 5) {
+    return "Smaller than 5";
   } else {
     return "Between 5 and 10";
   }
-
 
   return "Between 5 and 10";
 }
 
 testElseIf(7);
 
+/*
 75. Logical Order in If Else Statements
+*/
 
 function orderMyLogic(val) {
   if (val < 5) {
@@ -749,53 +864,67 @@ function orderMyLogic(val) {
 
 orderMyLogic(7);
 
+/*
 76. Chaining If Else Statements
+*/
 
 function testSize(num) {
   if (num < 5) {
-    return "Tiny"
+    return "Tiny";
   } else if (num < 10) {
-    return "Small"
+    return "Small";
   } else if (num < 15) {
-    return "Medium"
+    return "Medium";
   } else if (num < 20) {
-    return "Large"
+    return "Large";
   } else {
-    return "Huge"
+    return "Huge";
   }
 }
 
 console.log(testSize(20));
 
+/*
 77. Golf Code
+*/
 
-var names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+var names = [
+  "Hole-in-one!",
+  "Eagle",
+  "Birdie",
+  "Par",
+  "Bogey",
+  "Double Bogey",
+  "Go Home!",
+];
 function golfScore(par, strokes) {
   if (strokes == 1) {
-    return names[0]
+    return names[0];
   } else if (strokes <= par - 2) {
-    return names[1]
+    return names[1];
   } else if (strokes == par - 1) {
-    return names[2]
+    return names[2];
   } else if (strokes == par) {
-    return names[3]
+    return names[3];
   } else if (strokes == par + 1) {
-    return names[4]
+    return names[4];
   } else if (strokes == par + 2) {
-    return names[5]
+    return names[5];
   } else if (strokes >= par + 3) {
-    return names[6]
+    return names[6];
   }
 }
 
 // Change these values to test
 console.log(golfScore(5, 8));
 
+/*
 78. Selecting from Many Options with Switch Statements
+*/
 
 function caseInSwitch(val) {
   var answer = "";
-  switch(val) {
+  switch (val) {
     case 1:
       answer = "alpha";
       break;
@@ -810,13 +939,15 @@ function caseInSwitch(val) {
       break;
   }
 
-  return answer;  
+  return answer;
 }
 
 // Change this value to test
 console.log(caseInSwitch(3));
 
+/*
 79. Adding a Default Option in Switch Statements
+*/
 
 function switchOfStuff(val) {
   var answer = "";
@@ -834,17 +965,19 @@ function switchOfStuff(val) {
       answer = "stuff";
       break;
   }
-    return answer;  
-  }
+  return answer;
+}
 
 // Change this value to test
 console.log(switchOfStuff("c"));
 
+/*
 80. Multiple Identical Options in Switch Statements
+*/
 
 function sequentialSizes(val) {
   var answer = "";
-  switch(val) {
+  switch (val) {
     case 1:
     case 2:
     case 3:
@@ -861,19 +994,21 @@ function sequentialSizes(val) {
       answer = "High";
       break;
   }
-  return answer;  
+  return answer;
 }
 
 // Change this value to test
 console.log(sequentialSizes(8));
 
+/*
 81. Replacing If Else Chains with Switch
+*/
 
 function chainToSwitch(val) {
   var answer = "";
   // Only change code below this line
-  
-  switch(val) {
+
+  switch (val) {
     case "bob":
       answer = "Marley";
       break;
@@ -890,43 +1025,409 @@ function chainToSwitch(val) {
       answer = "Ate Nine";
       break;
   }
-  
-  // Only change code above this line  
-  return answer;  
+
+  // Only change code above this line
+  return answer;
 }
 
 // Change this value to test
 chainToSwitch(7);
 
-82. 
-83. 
-84. 
-85.
-86. 
-87. 
-88. 
-89. 
-90.
-91. 
-92. 
-93.
-94. 
-95. 
-96. 
-97. 
-98. 
-99. 
-100.
-101. 
-102. 
-103. 
-104. 
-105. 
-106. 
-107. 
-108. 
-109. 
-110.
-111.
-112. 
-113.
+/*
+82. Returning Boolean Values from Functions
+*/
+function isLess(a, b) {
+  // Fix this code
+  return a < b;
+}
+
+// Change these values to test
+console.log(isLess(20, 15));
+
+/*
+83. Return Early Pattern for Functions
+*/
+// Setup
+function abTest(a, b) {
+  // Only change code below this line
+
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+
+  // Only change code above this line
+
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+// Change values below to test your code
+console.log(abTest(-2, 2));
+
+/*
+84. Counting Cards
+*/
+var count = 0;
+
+function cc(card) {
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+
+  var holdbet = "Hold";
+  if (count > 0) {
+    holdbet = "Bet";
+  }
+
+  return count + " " + holdbet;
+}
+
+cc(2);
+cc("K");
+cc(10);
+cc("K");
+cc("A");
+console.log(cc(4));
+
+/*
+85. Build JavaScript Objects
+*/
+
+// Example
+var ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+};
+
+// Only change code below this line.
+
+var myDog = {
+  name: "Quincy",
+  legs: 3,
+  tails: 2,
+  friends: [],
+};
+
+/*
+86. Accessing Object Properties with Dot Notation
+*/
+
+// Setup
+var testObj = {
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats",
+};
+
+// Only change code below this line
+
+var hatValue = testObj.hat; // Change this line
+var shirtValue = testObj.shirt; // Change this line
+
+/*
+87. Accessing Object Properties with Bracket Notation
+*/
+
+// Setup
+var testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water",
+};
+
+// Only change code below this line
+
+var entreeValue = testObj["an entree"]; // Change this line
+var drinkValue = testObj["the drink"]; // Change this line
+
+/*
+88. Accessing Object Properties with Variables
+*/
+
+// Setup
+var testObj = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas",
+};
+
+// Only change code below this line;
+
+var playerNumber = 16; // Change this Line
+var player = testObj[playerNumber]; // Change this Line
+
+/*
+89. Updating Object Properties
+*/
+
+// Example
+var ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+};
+
+ourDog.name = "Happy Camper";
+
+// Setup
+var myDog = {
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+// Only change code below this line.
+
+myDog.name = "Happy Coder";
+
+/*
+90. Add New Properties to a JavaScript Object
+*/
+
+// Example
+var ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+};
+
+ourDog.bark = "bow-wow";
+
+// Setup
+var myDog = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+// Only change code below this line.
+
+myDog["bark"] = "woof!";
+
+/*
+91. Delete Properties from a JavaScript Object
+*/
+
+var ourDog = {
+  name: "Camper",
+  legs: 4,
+  tails: 1,
+  friends: ["everything!"],
+  bark: "bow-wow",
+};
+
+delete ourDog.bark;
+
+// Setup
+var myDog = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+  bark: "woof",
+};
+
+// Only change code below this line.
+
+delete myDog.tails;
+
+/*
+92. Using Objects for Lookups
+*/
+
+// Setup
+function phoneticLookup(val) {
+  var result = "";
+
+  // Only change code below this line
+
+  var lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  };
+  result = lookup[val];
+  // Only change code above this line
+  return result;
+}
+
+// Change this value to test
+console.log(phoneticLookup("foxtrot"));
+
+/*
+93. Testing Objects for Properties
+*/
+
+function checkObj(obj, checkProp) {
+  if (obj.hasOwnProperty(checkProp)) {
+    return obj[checkProp];
+  } else {
+    return "Not Found";
+  }
+}
+
+/*
+94. Manipulating Complex Objects
+*/
+
+var myMusic = [
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+  // Add record here
+  {
+    artist: "Beau Carnes",
+    title: "Cereal Man",
+    release_year: 2003,
+    formats: ["YouTube video", "55"],
+  },
+];
+
+/*
+95. Accessing Nested Objects
+*/
+
+// Setup
+var myStorage = {
+  car: {
+    inside: {
+      "glove box": "maps",
+      "passenger seat": "crumbs",
+    },
+    outside: {
+      trunk: "jack",
+    },
+  },
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"]; // Change this line
+
+console.log(gloveBoxContents);
+
+/*
+96. Accessing Nested Arrays
+*/
+
+// Setup
+var myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"],
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"],
+  },
+];
+
+// Only change code below this line
+
+var secondTree = myPlants[1].list[1]; // Change this line
+
+console.log(secondTree);
+
+/*
+97. Record Collection
+*/
+
+function updateRecords(records, id, prop, value) {
+  if (prop !== "tracks" && value !== "") {
+    records[id][prop] = value;
+  } else if (
+    prop === "tracks" &&
+    records[id].hasOwnProperty("tracks") === false
+  ) {
+    records[id][prop] = [value];
+  } else if (prop === "tracks" && value !== "") {
+    records[id][prop].push(value);
+  } else if (value === "") {
+    delete records[id][prop];
+  }
+  return records;
+}
+
+/*
+98. Iterate with JavaScript While Loops
+*/
+
+var myArray = [];
+
+var i = 0;
+while (i < 5) {
+  myArray.push(i);
+  i++;
+}
+
+console.log(myArray);
+
+/*
+99. Iterate with JavaScript While Loops
+*/
+
+var myArray = [];
+
+var i = 0;
+while (i < 5) {
+  myArray.push(i);
+  i++;
+}
+
+console.log(myArray);
+
+/*
+100. 
+*/
+
+/*
+101.
+*/
+
+/*
+102.
+*/
+
+/*
+103.
+*/
+
+/*
+104.
+*/
+
+/*
+105.
+
+*/
+106;
+107;
+108;
+109;
+110;
+111;
+112;
+113;
