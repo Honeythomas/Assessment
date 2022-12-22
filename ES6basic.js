@@ -1,4 +1,4 @@
-/*
+
 1. Compare Scopes of the var and let Keywords
 
 function checkScope() {
@@ -12,7 +12,7 @@ function checkScope() {
   }
   */
 
-/*
+
   2. Mutate an Array Declared with const
 
 const s = [5, 7, 2];
@@ -23,9 +23,9 @@ function editInPlace() {
 }
 editInPlace();
 
-  */
+// ==
 
-/*
+
  3.Prevent Object Mutation
 
  function freezeObj() {
@@ -42,16 +42,16 @@ editInPlace();
   return MATH_CONSTANTS.PI;
 }
 const PI = freezeObj();
- */
 
-/*
+
+// ==
 
 4. Use Arrow Functions to Write Concise Anonymous Functions
 
 const magic = () => {  return new Date();};
-*/
 
-/*
+// ==
+
 5. Write Arrow Functions with Parameters
 
 const myConcat = (arr1, arr2) => {
@@ -59,23 +59,25 @@ const myConcat = (arr1, arr2) => {
 };
 
 console.log(myConcat([1, 2], [3, 4, 5]));
-*/
 
-/*
+// ==
+
 6. Set Default Parameters for Your Functions
 
 const increment = (number, value = 1) => number + value;
-*/
 
-/*
+
+// ==
+
 7. Use the Rest Parameter with Function Parameters	
 
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
 }
-*/
 
-/*
+
+// ==
+
 8. Use the Spread Operator to Evaluate Arrays In-Place
 
 const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
@@ -84,9 +86,9 @@ let arr2;
 arr2 = [...arr1];  // Change this line
 
 console.log(arr2);
-*/
 
-/*
+// ==
+
 9. Use Destructuring Assignment to Extract Values from Objects
 
 const HIGH_TEMPERATURES = {
@@ -96,9 +98,9 @@ const HIGH_TEMPERATURES = {
 };
 
 const {today, tomorrow} = HIGH_TEMPERATURES;
-*/
 
-/*
+// ==
+
 10. Use Destructuring Assignment to Assign Variables from Objects
 
 const HIGH_TEMPERATURES = {
@@ -112,8 +114,8 @@ const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
 console.log(highToday); // should be 77
 console.log(highTomorrow); // should be 80
 
-*/
-/*
+// ==
+
 11. Use Destructuring Assignment to Assign Variables from Nested Objects
 
 const LOCAL_FORECAST = {
@@ -123,16 +125,15 @@ const LOCAL_FORECAST = {
 };
 const { today: { low: lowToday, high: highToday } } = LOCAL_FORECAST;
 
-*/
+// ==
 
-/*
 12. Use Destructuring Assignment to Assign Variables from Arrays
 
 let a = 8, b = 6;
 [a, b] = [b, a];
-*/
 
-/*
+// ==
+
 13. Use Destructuring Assignment with the Rest Parameter to Reassign Array Elements
 
 function removeFirstTwo(list) {
@@ -143,8 +144,8 @@ function removeFirstTwo(list) {
 const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const sourceWithoutFirstTwo = removeFirstTwo(source);
 
-*/
-/*
+// ==
+
 14. Use Destructuring Assignment to Pass an Object as a Function's Parameters
 
 const stats = {
@@ -158,8 +159,8 @@ const stats = {
 
 const half = ({ max, min }) => (max + min) / 2.0;
 
-*/
-/*
+// ==
+
 15. Create Strings using Template Literals
 
 const result = {
@@ -174,8 +175,8 @@ function makeList(arr) {
 }
 const failuresList = makeList(result.failure);
 
-*/
-/*
+// ==
+
 16. Write Concise Object Literal Declarations Using Object Property Shorthand
 
 const createPerson = (name, age, gender) => {
@@ -187,8 +188,8 @@ const createPerson = (name, age, gender) => {
   };
 };
 
-*/
-/*
+// ==
+
 17. Write Concise Declarative Functions with ES6
 
 const bicycle = {
@@ -199,8 +200,8 @@ const bicycle = {
   }
 };
 
-*/
-/*
+// ==
+
 18. Use class Syntax to Define a Constructor Function
 
 class Vegetable {
@@ -212,8 +213,8 @@ class Vegetable {
 const carrot = new Vegetable("carrot");
 console.log(carrot.name); // => should be 'carrot'
 
-*/
-/*
+// ==
+
 19. Use getters and setters to Control Access to an Object
 
 class Thermostat {
@@ -229,8 +230,9 @@ class Thermostat {
     this.fahrenheit = (celsius * 9.0) / 5 + 32;
   }
 }
-*/
-/*
+
+// ==
+
 20. Create a Module Script
 
 <html>
@@ -240,8 +242,9 @@ class Thermostat {
     <!-- add your code above -->
   </body>
 </html>
-*/
-/*
+
+// ==
+
 21. Use export to Share a Code Block
 
 export const uppercaseString = (string) => {
@@ -251,50 +254,52 @@ export const uppercaseString = (string) => {
 export const lowercaseString = (string) => {
   return string.toLowerCase()
 }
-*/
-/*
+
+// ==
+
 22. Reuse JavaScript Code Using import
 
 import { uppercaseString, lowercaseString } from './string_functions.js';
 
 uppercaseString("hello");
 lowercaseString("WORLD!");
-*/
-/*
+
+// ==
+
 23. Use * to Import Everything from a File
 
 import * as stringFunctions from "./string_functions.js";
 
 stringFunctions.uppercaseString("hello");
 stringFunctions.lowercaseString("WORLD!");
-*/
 
-/*
+// ==
+
 24. Create an Export Fallback with export default
 
 "use strict";
 export default function subtract(x, y) {
   return x - y;
 }
-*/
 
-/*
+// ==
+
 25. Import a Default Export
 
 import subtract from "./math_functions.js";
 
 subtract(7,4);
-*/
 
-/*
+// ==
+
 26. Create a JavaScript Promise
 
 const makeServerRequest = new Promise((resolve, reject) => {
 
 });
-*/
 
-/*
+// ==
+
 27. Complete a Promise with resolve and reject
 
 const makeServerRequest = new Promise((resolve, reject) => {
@@ -306,9 +311,9 @@ const makeServerRequest = new Promise((resolve, reject) => {
     reject("Data not received");
   }
 });
-*/
 
-/*
+// ==
+
 28. Handle a Fulfilled Promise with then
 
 const makeServerRequest = new Promise((resolve, reject) => {
@@ -324,9 +329,9 @@ const makeServerRequest = new Promise((resolve, reject) => {
 makeServerRequest.then(result => {
   console.log(result);
 });
-*/
 
-/*
+// ==
+
 29. Handle a Rejected Promise with catch
 
 const makeServerRequest = new Promise((resolve, reject) => {
@@ -346,4 +351,4 @@ makeServerRequest.then(result => {
 makeServerRequest.catch(error => {
   console.log(error);
 });
-*/
+
