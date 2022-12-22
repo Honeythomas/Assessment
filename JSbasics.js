@@ -1386,26 +1386,56 @@ while (i < 5) {
 console.log(myArray);
 
 /*
-99. Iterate with JavaScript While Loops
+99. Iterate with JavaScript For Loops
 */
 
+// Example
+var ourArray = [];
+
+for (var i = 0; i < 5; i++) {
+  ourArray.push(i);
+}
+
+// Setup
 var myArray = [];
 
-var i = 0;
-while (i < 5) {
+// Only change code below this line.
+
+for (var i = 1; i < 6; i++) {
   myArray.push(i);
-  i++;
 }
 
 console.log(myArray);
 
 /*
-100. 
+100. Iterate Odd Numbers With a For Loop 
 */
 
+// Example
+var ourArray = [];
+
+for (var i = 0; i < 10; i += 2) {
+  ourArray.push(i);
+}
+
+console.log(ourArray);
+
+// Setup
+var myArray = [];
+
+// Only change code below this line.
+
+for (var i = 1; i < 10; i += 2) {
+  myArray.push(i);
+}
+
+console.log(myArray);
+
 /*
-101.
+101. Count Backwards With a For Loop
 */
+
+
 
 /*
 102.
